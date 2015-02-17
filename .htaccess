@@ -1,0 +1,8 @@
+Options -MultiViews
+RewriteEngine On
+
+RewriteRule ^chat/([A-Za-z0-9-]+)/?$ chat.php?id=$1 [NC]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+RewriteRule ^chat/([0-9-]+)/?$ chat.php?id=$1 [NC]
