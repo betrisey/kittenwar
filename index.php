@@ -89,19 +89,7 @@ if (isset($_GET['win']) && isset($_GET['lose'])) {
  |_|  |_|\___|_| |_|\__,_|
 
 -->
-		<div class="large-4 medium-4 columns">
-			<p>
-				<a class="medium expand disabled button">Voter</a><br/>
-				<a id="info2" href="meilleurs.php" class="medium expand success button">Les meilleurs</a><br/>
-				<a id="info3" href="pires.php" class="medium alert expand button">Les pires</a><br/>
-				<a id="info4" href="ajouter.php" class="medium expand button">Ajouter</a>
-			</p>
-			<div class="panel">
-				<h5>Télécharge l'appli !</h5>
-				<p>Kittenwar est disponible sur Android.</p>
-				<a class="small disabled button">Télécharger</a>
-			</div>
-		</div>
+		<?php require '_inc/menu.php'; ?>
 	</div>
 	<footer class="row">
 		<div class="large-12 columns"><hr/>

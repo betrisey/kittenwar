@@ -59,19 +59,7 @@ require_once 'db_connect.php';
 		</div>
 
 		<!-- Menu -->
-		<div class="large-4 medium-4 columns">
-			<p>
-				<a href="index.php" class="medium expand button">Voter</a><br/>
-				<a class="medium expand success disabled button">Les meilleurs</a><br/>
-				<a href="pires.php" class="medium alert expand button">Les pires</a><br/>
-				<a href="ajouter.php" class="medium expand button">Ajouter</a>
-			</p>
-			<div class="panel">
-				<h5>Télécharge l'appli !</h5>
-				<p>Kittenwar est disponible sur Android.</p>
-				<a class="small disabled button">Télécharger</a>
-			</div>
-		</div>
+		<?php require '_inc/menu.php'; ?>
 	</div>
 	<footer class="row">
 		<div class="large-12 columns"><hr/>

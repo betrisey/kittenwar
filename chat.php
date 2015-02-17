@@ -10,9 +10,9 @@ $chat = $req->fetch();
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title><?php echo $chat['chatNom']; ?> - Kwar</title>
-	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="css/foundation.css" />
-	<script src="js/vendor/modernizr.js"></script>
+	<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="/css/foundation.css" />
+	<script src="/js/vendor/modernizr.js"></script>
 	<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
@@ -69,19 +69,7 @@ $chat = $req->fetch();
 		</div>
 
 		<!-- Menu -->
-		<div class="large-4 medium-4 columns">
-			<p>
-				<a href="index.php" class="medium expand button">Voter</a><br/>
-				<a href="meilleurs.php" class="medium expand success button">Les meilleurs</a><br/>
-				<a href="pires.php" class="medium alert expand button">Les pires</a><br/>
-				<a href="ajouter.php" class="medium expand button">Ajouter</a>
-			</p>
-			<div class="panel">
-				<h5>Télécharge l'appli !</h5>
-				<p>Kittenwar est disponible sur Android.</p>
-				<a class="small disabled button">Télécharger</a>
-			</div>
-		</div>
+		<?php require '_inc/menu.php'; ?>
 	</div>
 	<footer class="row">
 		<div class="large-12 columns"><hr/>
@@ -93,8 +81,8 @@ $chat = $req->fetch();
 			</div>
 		</div>
 	</footer>
-<!--<script src="js/vendor/jquery.js"></script>
-<script src="js/foundation.min.js"></script>
+<!--<script src="/js/vendor/jquery.js"></script>
+<script src="/js/foundation.min.js"></script>
 <script>
   $(document).foundation();
 </script>-->
