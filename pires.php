@@ -40,7 +40,7 @@ require_once 'db_connect.php';
 				{
 					?>
 					<div class="large-6 medium-12 columns">
-						<a href="chat.php?id=<?php echo $chat['chatId']; ?>">
+						<a href="chat/<?php echo $chat['chatId']; ?>">
 							<figure>
 								<img src="<?php echo htmlspecialchars($chat['chatImage']); ?>" alt="<?php echo htmlspecialchars($chat['chatNom']); ?>">
 								<figcaption class="panel">
